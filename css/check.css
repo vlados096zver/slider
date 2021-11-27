@@ -1,0 +1,155 @@
+.check__item {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 14px;
+}
+
+.check__item--disabled .check__count {
+	color: #7b909a;
+}
+
+.check__label {
+	display: block;
+	position: relative;
+	padding-left: 27px;
+}
+
+.check__label:after,
+.check__label:before {
+	position: absolute;
+	content: ' ';
+}
+
+.check__label:after {
+	top: 0px;
+	left: 0px;
+	width: 17px;
+	height: 17px;
+	background-color: #fff;
+	border: 1px solid #E9E8F4;
+	border-radius: 3px;
+}
+
+.check__label:before {
+	z-index: 3;
+	top: 0px;
+	left: 0px;
+	width: 17px;
+	height: 17px;
+	background-image: url(../img/icons/decor/check.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 9px 7px;
+	filter: invert(92%) sepia(51%) saturate(0%) hue-rotate(211deg) brightness(109%) contrast(101%);
+}
+
+.check__input {
+	display: none;
+}
+
+.check__input:checked + .check__label:after {
+	background-color: #3453f3;
+}
+
+.check__input:disabled + .check__label {
+	color: #7b909a;
+	text-decoration: line-through;
+}
+
+.check__count {
+	display: inline-block;
+	font-size: 13px;
+	line-height: 1.2;
+	color: #262832;
+	background-color: #e4e9ec;
+	border-radius: 5px;
+	padding: 2px 8px;
+}
+
+.check__holder {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 -6px;
+}
+
+.check__box {
+	width: 55px;
+	margin: 0 6px;
+	margin-bottom: 12px;
+}
+
+.check__box--black .check__type:before {
+	filter: none;
+}
+
+.check__elem {
+	display: none;
+}
+
+.check__elem:checked + .check__type:before {
+	opacity: 1;
+	visibility: visible;
+}
+
+.check__elem:disabled + .check__type {
+	color: #7b909a;
+	text-decoration: line-through;
+}
+
+.check__elem:disabled + .check__type:before {
+	opacity: 1;
+	visibility: visible;
+	top: 0px;
+	width: 55px;
+	height: 55px;
+	background-image: url(../img/icons/decor/line.svg);
+	background-size: 55px;
+	filter: none;
+}
+
+.check__type {
+	position: relative;
+	cursor: pointer;
+	display: block;
+	font-size: 12px;
+	line-height: 1.2;
+	color: #002638;
+	text-align: center;
+	padding-top: 60px;
+}
+
+.check__type:after,
+.check__type:before {
+	position: absolute;
+	content: ' ';
+}
+
+.check__type:after {
+	top: 0px;
+	left: 0px;
+	width: 55px;
+	height: 55px;
+	background-color: var(--bg);
+	border-radius: 8px;
+	border: 1px solid #e9e8f4;
+}
+
+.check__type:before {
+	z-index: 3;
+	opacity: 0;
+	visibility: hidden;
+	top: 17px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 17px;
+	height: 17px;
+	border-radius: 3px;
+	background-image: url(../img/icons/decor/check.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 9px 7px;
+	filter: invert(92%) sepia(51%) saturate(0%) hue-rotate(211deg) brightness(109%) contrast(101%);
+}
+

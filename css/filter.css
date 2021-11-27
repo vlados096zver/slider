@@ -1,0 +1,46 @@
+.filter__wrap {
+	display: none;
+}
+
+.filter__item {
+	width: calc(50% - 8px);
+	margin: 0 4px;
+}
+
+.filter__text {
+	position: absolute;
+	z-index: 3;
+	font-size: 11px;
+	line-height: 1.2;
+	letter-spacing: 0.15px;
+	color: #79778a;
+	padding: 5px 10px;
+}
+
+.filter__block {
+	cursor: pointer;
+	background-image: url(../img/icons/decor/filter.svg);
+	background-repeat: no-repeat;
+	background-size: 20px 18px;
+	background-position: left 12px center;
+	font-size: 14px;
+	line-height: 1.2;
+	color: #3453f3;
+	border: 1px solid #e9e8f4;
+	border-radius: 15px;
+	text-align: right;
+	padding: 13px;
+	padding-right: 34px;
+}
+
+@media screen and (max-width: 767px) {
+
+.filter__wrap {
+	position: relative;
+	display: flex;
+	margin: 0 -4px;
+	margin-bottom: 15px;
+}
+
+}
+
